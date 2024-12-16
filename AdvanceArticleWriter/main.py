@@ -31,7 +31,6 @@ WebAgent = Agent(
     markdown=True,
     debug_mode=True
 )
-
 # Define NewspaperAgent
 NewspaperAgent = Agent(
     model=Groq(id='llama-3.3-70b-versatile'),
@@ -46,7 +45,6 @@ NewspaperAgent = Agent(
     show_tool_calls=True,
     debug_mode=True
 )
-
 # Define AgentTeam
 AgentTeam = Agent(
     team=[WebAgent, NewspaperAgent],
