@@ -61,6 +61,7 @@ AgentTeam = Agent(
 if __name__ == '__main__':
     try:
         print("Generating article...")
-        AgentTeam.print_response('Write an article on Pet Care', stream=True)
+        topic = input('Enter your Topic')
+        AgentTeam.print_response(f'Write an article on {topic}', stream=True)
     except Exception as e:
         print(f"Error: {e}")
