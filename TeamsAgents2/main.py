@@ -32,4 +32,4 @@ AgentTeam = Agent(
         markdown=True
     )
 if __name__ == '__main__':
-    AgentTeam.print_response('Summarize analyst recommendation and share the latest news for NVDA ', stream=True)
+    AgentTeam.print_response('Summarize analyst recommendation and share the latest news for TSLA ', stream=True)
